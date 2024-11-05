@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Antrian</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4 py-10 max-w-xl">
+        <h1 class="text-3xl font-bold text-center mb-6 text-gray-800">Sistem Antrian</h1>
+        <div class="mb-4">
+            <input type="text" id="buyerName" placeholder="Masukkan Nama Pembeli" class="border border-gray-300 p-3 w-full rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-300" />
+            <input type="text" id="orderName" placeholder="Masukkan Nama Pesanan" class="border border-gray-300 p-3 w-full rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-300 mt-2" />
+            <button id="addBtn" class="bg-blue-600 text-white p-3 mt-2 rounded-md hover:bg-blue-700 transition duration-300 w-full">Tambah Antrian</button>
+        </div>
+        <div>
+            <h2 class="text-2xl font-semibold mb-4 text-gray-700">Daftar Antrian</h2>
+            <ul id="queueList" class="list-disc pl-5 font-bold text-blue-200">Nothings Here</ul>
+        </div>
+        <div class="flex justify-between mt-10">
+            <button id="clearAllBtn" class="bg-red-600 text-white p-2 rounded-md hover:bg-red-700 transition duration-300">Hapus Semua Antrian</button>
+            <span id="totalQueue" class="text-lg font-semibold">Total Antrian: 0</span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
